@@ -30,61 +30,61 @@ public class UIManager : MonoBehaviour
 
     public void ButtonLPressed()
     {
-        if (currentPage == map)
+        if (currentPage.tag == map.tag)
         {
             ChangePage(popVenues);
         } 
-        else if (currentPage == mapWhisper)
+        else if (currentPage.tag == mapWhisper.tag)
         {
-            //aaa
+            ChangePage(map);
         }
-        else if (currentPage == mapSpark)
+        else if (currentPage.tag == mapSpark.tag)
         {
-            //aaa
+            ChangePage(map);
         } 
-        else if (currentPage == popVenues)
+        else if (currentPage.tag == popVenues.tag)
         {
-            //aaa
+            ChangePage(map);
         } 
-        else if (currentPage == listenStart)
+        else if (currentPage.tag == listenStart.tag)
         {
-            //aaa
+            ChangePage(map);
         } 
-        else if (currentPage == listen)
+        else if (currentPage.tag == listen.tag)
         {
-            //aaa
+            ChangePage(map);
         } 
-        else if (currentPage == listenPause)
+        else if (currentPage.tag == listenPause.tag)
         {
-            //aaa
+            ChangePage(map);
         } 
-        else if (currentPage == recordStart)
+        else if (currentPage.tag == recordStart.tag)
         {
-            //aaa
+            ChangePage(map);
         } 
-        else if (currentPage == recordStartFromSpark)
+        else if (currentPage.tag == recordStartFromSpark.tag)
         {
-            //aaa
+            ChangePage(map);
         } 
-        else if (currentPage == record)
+        else if (currentPage.tag == record.tag)
         {
-            //aaa
+            ChangePage(recordFinished);
         } 
-        else if (currentPage == recordPaused)
+        else if (currentPage.tag == recordPaused.tag)
         {
-            //aaa
+            ChangePage(recordFinished);
         } 
-        else if (currentPage == recordFinished)
+        else if (currentPage.tag == recordFinished.tag)
         {
-            //aaa
+            ChangePage(delete);
         } 
-        else if (currentPage == delete)
+        else if (currentPage.tag == delete.tag)
         {
-            //aaa
+            ChangePage(recordFinished);
         } 
-        else if (currentPage == share)
+        else if (currentPage.tag == share.tag)
         {
-            //aaa
+            ChangePage(recordFinished);
         } else
         {
             Debug.Log("Error");
@@ -94,61 +94,65 @@ public class UIManager : MonoBehaviour
 
     public void ButtonRPressed()
     {
-        if (currentPage == map)
+        if (currentPage.tag == map.tag)
         {
-            //aaa
+            ChangePage(recordStart);
         }
-        else if (currentPage == mapWhisper)
+        else if (currentPage.tag == mapWhisper.tag)
         {
-            //aaa
+            ChangePage(listenStart);
         }
-        else if (currentPage == mapSpark)
+        else if (currentPage.tag == mapSpark.tag)
         {
-            //aaa
+            ChangePage(recordStartFromSpark);
         }
-        else if (currentPage == popVenues)
+        else if (currentPage.tag == popVenues.tag)
         {
-            //aaa
+            ChangePage(recordStart);
         }
-        else if (currentPage == listenStart)
+        else if (currentPage.tag == listenStart.tag)
         {
-            //aaa
+            ChangePage(listen);
         }
-        else if (currentPage == listen)
+        else if (currentPage.tag == listen.tag)
         {
-            //aaa
+            ChangePage(listenPause);
         }
-        else if (currentPage == listenPause)
+        else if (currentPage.tag == listenPause.tag)
         {
-            //aaa
+            ChangePage(listen);
         }
-        else if (currentPage == recordStart)
+        else if (currentPage.tag == recordStart.tag)
         {
-            //aaa
+            ChangePage(record);
         }
-        else if (currentPage == recordStartFromSpark)
+        else if (currentPage.tag == recordStartFromSpark.tag)
         {
-            //aaa
+            ChangePage(record);
         }
-        else if (currentPage == record)
+        else if (currentPage.tag == record.tag)
         {
-            //aaa
+            ChangePage(recordPaused);
         }
-        else if (currentPage == recordPaused)
+        else if (currentPage.tag == recordPaused.tag)
         {
-            //aaa
+            ChangePage(record);
         }
-        else if (currentPage == recordFinished)
+        else if (currentPage.tag == recordFinished.tag)
         {
-            //aaa
+            ChangePage(share);
         }
-        else if (currentPage == delete)
+        else if (currentPage.tag == delete.tag)
         {
-            //aaa
+            ChangePage(map);
         }
-        else if (currentPage == share)
+        else if (currentPage.tag == share.tag)
         {
-            //aaa
+            ChangePage(map);
+        }
+        else
+        {
+            Debug.Log("Error");
         }
     }
 
@@ -159,8 +163,11 @@ public class UIManager : MonoBehaviour
 
         if (currentPage) Destroy(currentPage);
 
-        currentPage = Instantiate(_newPage, transform.position, transform.rotation);
-        currentPage.transform.parent = transform;
-        currentPage.transform.localScale = Vector3.one * .00005f;
+        if (_newPage)
+        {
+            currentPage = Instantiate(_newPage, transform.position, transform.rotation);
+            currentPage.transform.parent = transform;
+            currentPage.transform.localScale = Vector3.one * .00005f;
+        }
     }
 }

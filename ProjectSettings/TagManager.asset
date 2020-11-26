@@ -5,6 +5,20 @@ TagManager:
   serializedVersion: 2
   tags:
   - Button
+  - Page_Map
+  - Page_MapWhisper
+  - Page_MapSpark
+  - Page_PopVenues
+  - Page_ListenStart
+  - Page_Listen
+  - Page_ListenPause
+  - Page_RecordStart
+  - Page_RecordStartFromSpark
+  - Page_Record
+  - Page_RecordPaused
+  - Page_RecordFinished
+  - Page_Delete
+  - Page_Share
   layers:
   - Default
   - TransparentFX
