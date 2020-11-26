@@ -502,7 +502,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1140518398}
-  - component: {fileID: 1140518397}
   m_Layer: 0
   m_Name: MANAGER
   m_TagString: Untagged
@@ -510,18 +509,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1140518397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1140518396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b855cd2c256b74e84e871a4a3c8268, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1140518398
 Transform:
   m_ObjectHideFlags: 0
@@ -729,6 +716,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 663656586114563530, guid: c7a3b0f8a8157ac4faf482af08a52cc5,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 663656586114563530, guid: c7a3b0f8a8157ac4faf482af08a52cc5,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2251161188049560441, guid: c7a3b0f8a8157ac4faf482af08a52cc5,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2251161188049560441, guid: c7a3b0f8a8157ac4faf482af08a52cc5,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858139862146714698, guid: c7a3b0f8a8157ac4faf482af08a52cc5,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858139862146714698, guid: c7a3b0f8a8157ac4faf482af08a52cc5,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604780968279101169, guid: c7a3b0f8a8157ac4faf482af08a52cc5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4148149635420288215, guid: c7a3b0f8a8157ac4faf482af08a52cc5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -794,5 +816,15 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: f987415e7e688304f8df2f138a0ee97f, type: 2}
+    - target: {fileID: 5810851388391457779, guid: c7a3b0f8a8157ac4faf482af08a52cc5,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810851388391457779, guid: c7a3b0f8a8157ac4faf482af08a52cc5,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7a3b0f8a8157ac4faf482af08a52cc5, type: 3}

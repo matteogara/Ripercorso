@@ -7,15 +7,14 @@ public class PushButton : MonoBehaviour
     public enum ButtonType {Left, Right}
     public ButtonType buttonType;
     public Animator bookAnim;
+    public UIManager uiManager;
 
     AudioSource audio;
-    UIManager uiManager;
 
 
     private void Start()
     {
         audio = GetComponent<AudioSource>();
-        uiManager = GameObject.Find("MANAGER").GetComponent<UIManager>();
     }
 
 

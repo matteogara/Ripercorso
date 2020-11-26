@@ -123,6 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: 0
   bookAnim: {fileID: 4577484369522612813}
+  uiManager: {fileID: 8296014198248070296}
 --- !u!65 &8850326180107075720
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -246,6 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: 1
   bookAnim: {fileID: 4577484369522612813}
+  uiManager: {fileID: 8296014198248070296}
 --- !u!65 &8380766577527868996
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -273,6 +275,71 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isOpen: 0
   isCompletelyOpen: 0
+--- !u!1 &6645636702545230923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1467363373637324074}
+  - component: {fileID: 8296014198248070296}
+  m_Layer: 0
+  m_Name: UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1467363373637324074
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6645636702545230923}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0.0005, y: 0.000085, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8754529617295439953}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &8296014198248070296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6645636702545230923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b855cd2c256b74e84e871a4a3c8268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  map: {fileID: 6038750952496083172, guid: 2bc58968e6827534bbe8803d9f5d1cad, type: 3}
+  mapWhisper: {fileID: 6207943321236006043, guid: e83604cc902f46b45b39932f172b6fba,
+    type: 3}
+  mapSpark: {fileID: 0}
+  popVenues: {fileID: 320437321582096087, guid: cb75ae928353f0d47918fd252469b6a7,
+    type: 3}
+  listenStart: {fileID: 4814214777574599270, guid: 2d137f578b4bc8b45979cc14f94ac54b,
+    type: 3}
+  listen: {fileID: 9161314971083110990, guid: 65f5be98d10365442bc8eb3ca090edff, type: 3}
+  listenPause: {fileID: 8364035613861656929, guid: 39690f56091125d40866b5591dc20a01,
+    type: 3}
+  recordStart: {fileID: 1370883069349066281, guid: 2bbfd199157235940a6b87db07b5b56a,
+    type: 3}
+  recordStartFromSpark: {fileID: 4225361412844743314, guid: 36159a9ab1b1d814b9a8586b4eb2deb7,
+    type: 3}
+  record: {fileID: 1662251262892077509, guid: e7bbcf8c9551b02438ea37df746eb077, type: 3}
+  recordPaused: {fileID: 3376979230775775115, guid: 9ea21a9678821ad4ea1f455cd9f38695,
+    type: 3}
+  recordFinished: {fileID: 691827776643386644, guid: 399e35a3b6893004090443f91786ede1,
+    type: 3}
+  delete: {fileID: 2040579889486307354, guid: 997a1e85c0ecaea498bcc9df31238d0f, type: 3}
+  share: {fileID: 1152982226640207596, guid: 7d25c06608d42534cb7da45acda72a66, type: 3}
 --- !u!65 &3582201057981978025
 BoxCollider:
   m_ObjectHideFlags: 0
